@@ -149,12 +149,12 @@ export default function EventsPage() {
               {events.map((event) => (
                 <Card key={event._id} className="hover:shadow-lg transition-shadow h-full flex flex-col">
                   <CardHeader>
-                    <CardTitle className="text-xl line-clamp-1">
+                    <CardTitle className="text-xl line-clamp-1 capitalize">
                       {event.title}
                     </CardTitle>
                     <div className="flex items-center text-sm text-muted-foreground">
                       <Users className="h-4 w-4 mr-1 flex-shrink-0" />
-                      <span className="line-clamp-1">by {event?.createdBy?.name}</span>
+                      <span className="line-clamp-1 capitalize">by {event?.createdBy?.name}</span>
                     </div>
                   </CardHeader>
                   <CardContent className="flex-grow space-y-3">

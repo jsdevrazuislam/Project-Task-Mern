@@ -154,10 +154,10 @@ export default function MyEventsPage() {
                     {events.map((event) => (
                         <Card key={event._id} className="hover:shadow-lg transition-shadow">
                             <CardHeader>
-                                <CardTitle className="text-xl">{event.title}</CardTitle>
+                                <CardTitle className="text-xl capitalize">{event.title}</CardTitle>
                                 <div className="flex items-center text-sm text-gray-600">
                                     <Users className="h-4 w-4 mr-1" />
-                                    <span>by {user?.name}</span>
+                                    <span className="capitalize">by {user?.name}</span>
                                 </div>
                             </CardHeader>
                             <CardContent className="space-y-4">
