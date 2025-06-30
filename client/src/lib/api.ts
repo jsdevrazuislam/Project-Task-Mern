@@ -2,7 +2,7 @@ import axios from "axios";
 import Cookies from "js-cookie";
 import { ACCESS_TOKEN } from "../constants/index";
 
-export const SERVER_URL = `http://localhost:8000`;
+export const SERVER_URL = `https://project-task-mern.onrender.com`;
 const baseURL = `${SERVER_URL}/api/v1`;
 
 export const api = axios.create({
