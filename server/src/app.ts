@@ -14,7 +14,7 @@ import { DATA_LIMIT } from "@/constants";
 import cookieParser from "cookie-parser";
 import { load_routes } from "@/utils/load-routes";
 
-const origin = ["http://localhost:5173"]
+const origin = ["http://localhost:5173", "https://project-task-mern.vercel.app"]
 const app: Application = express();
 
 
