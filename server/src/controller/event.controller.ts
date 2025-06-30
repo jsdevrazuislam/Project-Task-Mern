@@ -36,11 +36,7 @@ export const getAllEvents = asyncHandler(async (req: Request, res: Response) => 
 
   const search = req.query.search?.toString()?.trim() || "";
   const from = req.query.from ? new Date(req.query.from.toString()) : null;
-  let to = req.query.to ? new Date(req.query.to.toString()) : null;
-
-  if (to) {
-        to.setHours(23, 59, 59, 999);
-    }
+  const to = req.query.to ? new Date(req.query.to.toString()) : null;
 
   const cacheKey = `events_page_${page}_limit_${limit}_search_${search}_from_${from ?? "none"}_to_${to ?? "none"}`;
   const cached = cache.get(cacheKey);
