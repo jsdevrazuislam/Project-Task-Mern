@@ -50,7 +50,7 @@ A full-featured Event Management Web Application built with the MERN stack (Mong
 
 ## Live Demo
 
-Check out the live application: [https://yourapp.vercel.app](https://yourapp.vercel.app)
+Check out the live application: [https://project-mern-stack.vercel.app](https://project-mern-stack.vercel.app)
 
 ## Installation
 
