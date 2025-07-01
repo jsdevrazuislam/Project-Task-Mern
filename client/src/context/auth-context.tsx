@@ -59,9 +59,17 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   if (isLoading) {
     return (
-      <div className="flex items-center justify-center h-screen">
-        <Loader className="h-8 w-8 animate-spin" />
-      </div>
+       <div className="flex flex-col items-center justify-center h-screen text-center px-4">
+      <Loader className="h-8 w-8 animate-spin mb-4" />
+      <p className="text-sm text-muted-foreground">
+        Loading data... Please wait a moment.
+      </p>
+      <p className="text-xs text-muted-foreground mt-2 max-w-md">
+        This project is hosted on <strong>Render.com</strong> using a free plan. 
+        If the server was inactive for over <strong>50 seconds</strong>, it may take some time to wake up. 
+        Thank you for your patience!
+      </p>
+    </div>
     )
   }
 
